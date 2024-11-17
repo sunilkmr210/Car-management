@@ -1,0 +1,43 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #a7a1a1;
+  }
+  
+  .navbar-left {
+    flex: 1;
+    display: flex;
+  }
+  
+  .search-bar {
+    width: 60%;
+    max-width: 500px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .navbar-right {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .add-car-btn,
+  .logout-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    background-color: #726e6e;
+    cursor: pointer;
+  }
+
+  .search-icon {
+    margin: 5px;
+  }
+  
+  
