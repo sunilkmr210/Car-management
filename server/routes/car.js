@@ -113,5 +113,10 @@ router.get('/search', async (req, res)=>{
     }
 })
 
+router.get('/api/docs', async (req, res) => {
+    const url = 'https://documenter.getpostman.com/view/33383558/2sAYBREDVf';
+    res.json({ success: true, url });
+});
+
 
 module.exports = router;
