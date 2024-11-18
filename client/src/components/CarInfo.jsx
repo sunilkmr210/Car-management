@@ -17,7 +17,7 @@ const CarInfo = () => {
         {images.map((image, index) => (
           <img
             key={index}
-            src={`http://localhost:5000/${image.replace(/\\/g, '/')}`}
+            src={`https://car-management-hrir.onrender.com/${image.replace(/\\/g, '/')}`}
             alt={`${title} ${index + 1}`}
             className="car-image1"
           />

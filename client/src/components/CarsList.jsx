@@ -103,7 +103,7 @@ const CarList = () => {
             <i className="material-icons" style={{ "margin-left": "250px" }} onClick={()=>handleEdit(car)}>edit</i>
             <i className="material-icons" onClick={()=>handleDelete(car)}>delete</i>
             {car.images && car.images.length > 0 && (
-              <img className="car-image" src={`http://localhost:5000/${car.images[0].replace(/\\/g, '/')}`} alt={car.title} onClick={() => handleClick(car)}/>
+              <img className="car-image" src={`https://car-management-hrir.onrender.com/${car.images[0].replace(/\\/g, '/')}`} alt={car.title} onClick={() => handleClick(car)}/>
             )}
             <h3 className="car-title" onClick={() => handleClick(car)}>{car.title}</h3>
             <p className="car-description" onClick={() => handleClick(car)}>{truncateDescription(car.description)}</p>
