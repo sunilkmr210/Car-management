@@ -89,7 +89,7 @@ router.delete('/deleteCar/:id1/:id', verifyAndAuth, async (req, res)=>{
     try{
         const deletedCar = await Car.findByIdAndDelete(req.params.id1) 
         const user = await User.findById(req.params.id);
-        user.cars = user.cars.filter(id=>id!==req.params.id1);
+        user.cars = user.cars.filter(id=>id!==mongoose.Types.ObjectId(req.params.id1));
 
         await user.save();
         const cars = await Car.find();
